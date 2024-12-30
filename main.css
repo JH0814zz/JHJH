@@ -30,6 +30,7 @@ html, body {
 
 .header > h2 {
     margin-top: 10px;
+    line-height: 1; /* 텍스트가 로고와 동일 선상에 배치되도록 */
 }
 
 .header > img {
@@ -55,16 +56,15 @@ html, body {
     border-radius: 15px;
 }
 
-/* BOX 안에 태그 */
 #box > img { /* 민증 이미지 */
     width: 120px;
     height: 150px;
     position: relative;
-    overflow: hidden;
-    top: 70%; /* 이미지를 조금 내렸습니다. */
+    margin-top: 30px; /* 민증 이미지를 아래로 내리기 */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
+
 
 #box > h1 { /* 이름 */
     color: rgb(44, 43, 43);
@@ -284,7 +284,7 @@ progress {
     .QR_Code > img {
         width: 120px;
         height: 120px;
-        margin-top: -70px;
+        margin-top: -95px;
         margin-left: 230px;
     }
 
