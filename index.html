@@ -176,6 +176,7 @@
 	
 	.header > h2 {
 	    margin-top: 10px;
+	    line-height: 1; /* 텍스트가 로고와 동일 선상에 배치되도록 */
 	}
 	
 	.header > img {
@@ -201,7 +202,6 @@
 	    border-radius: 15px;
 	}
 	
-	/* BOX 안에 태그 */
 	#box > img { /* 민증 이미지 */
 	    width: 120px;
 	    height: 150px;
@@ -210,7 +210,7 @@
 	    left: 50%;
 	    transform: translateX(-50%);
 	}
-
+	
 	
 	#box > h1 { /* 이름 */
 	    color: rgb(44, 43, 43);
@@ -361,145 +361,145 @@
 	/* 모바일 반응형 */
 	@media (max-width: 600px) {  /* 스크린 넓이가 600 이하 라면 */
 	    .header_list {
-		display: inline-block;
-		margin-top: 5px;
-		margin-left: 60px;
+	        display: inline-block;
+	        margin-top: 5px;
+	        margin-left: 60px;
 	    }
-
-    #box {
-	width: 355px;
-	height: 550px;
-	box-shadow: 0px 0px 3px -5px grey;
-	margin-top: -60px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #fff;
-	border: 0px solid;
-	padding: auto;
-	border-radius: 15px;
-    }
-
-    /* BOX 안에 태그 */
-    #box > img { /* 민증 이미지 */
-	position: absolute;
-	float: left;
-	display: flex;
-	width: 120px;
-	height: 150px;
-	top: 14ch;
-    }
-
-    #box > h1 { /* 이름 */
-	color: rgb(44, 43, 43);
-	font-size: 25px;
-	margin-top: 200px;
-	margin-left: 26px;
-    }
-
-    #box > h2 { /* 민증 뒷자리 */
-	color: rgb(44, 43, 43);
-	margin-top: 10px;
-	margin-left: 26px;
-    }
-
-    #box > h3 { /* 주소 */
-	width: 300px;
-	font-size: 12px;
-	margin-top: 10px;
-	margin-left: 26px;
-    }
-
-    #box > h4 { /* 발급 날짜 */
-	font-size: 14px;
-	color: black;
-	margin-top: 160px;
-    }
-
-    #box > h5 { /* 사는 지역 */
-	font-size: 16px;
-	color: black;
-	margin-top: 10px;
-    }
-
-    /* 프로그래스 */
-    #box.box_main > h1 {
-	margin-top: 195px;
-	margin-left: 25px;
-    }
-
-    .QR_Code > img {
-	width: 120px;
-	height: 120px;
-	margin-top: -95px;
-	margin-left: 230px;
-    }
-
-    .progressbar_text {
-	display: inline-block;
-	color:#065bc6;
-	font-size: 10px;
-	margin-top: 43px;
-	margin-left: 27px;
-    }
-
-    .progressbar_time {
-	display: inline-block;
-	color:#065bc6;
-	font-size: 10px;
-	margin-top: 43px;
-	margin-left: 245px;
-    }
-
-    .QR_text {
-	font-size: 10px;
-	color: #ccc;
-	padding: 15px;
-	margin-left: 110px;
-    }
-
-    progress::-webkit-progress-value {
-	transition: width 1s;
-	background: #065bc6;
-    }
-
-    progress {
-	display: inline-block;
-	display: block;
-	top: 40px;
-	left: 27px;
-	width: 300px;
-	height: 5px;
-	position:relative;
-    }
-
-    .back {
-	display: inline-block;
-	display: block;
-	text-align: center;
-	width: 30px;
-	margin-left: 20px;
-	margin-top: -10px;
-	box-shadow: 1px 3px 3px -1px grey;
-	border-radius: 50%;
-	background-color: #fff;
-    }
-
-    .box_footer {
-	width: 100%;
-	text-align: center;
-	line-height: 80px;
-	margin-top: 23px;
-	border-top: 1px solid #065bc6;
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-	background-color: #065bc6;
-    }
-
-    .box_footer > p {
-	color: #fff;
-	padding: 0 10px;
-    }
-}
+	
+	    #box {
+	        width: 355px;
+	        height: 550px;
+	        box-shadow: 0px 0px 3px -5px grey;
+	        margin-top: -60px;
+	        margin-left: auto;
+	        margin-right: auto;
+	        background-color: #fff;
+	        border: 0px solid;
+	        padding: auto;
+	        border-radius: 15px;
+	    }
+	
+	    /* BOX 안에 태그 */
+	    #box > img { /* 민증 이미지 */
+	        position: absolute;
+	        float: left;
+	        display: flex;
+	        width: 120px;
+	        height: 150px;
+	        top: 14ch;
+	    }
+	
+	    #box > h1 { /* 이름 */
+	        color: rgb(44, 43, 43);
+	        font-size: 25px;
+	        margin-top: 200px;
+	        margin-left: 26px;
+	    }
+	
+	    #box > h2 { /* 민증 뒷자리 */
+	        color: rgb(44, 43, 43);
+	        margin-top: 10px;
+	        margin-left: 26px;
+	    }
+	
+	    #box > h3 { /* 주소 */
+	        width: 300px;
+	        font-size: 12px;
+	        margin-top: 10px;
+	        margin-left: 26px;
+	    }
+	
+	    #box > h4 { /* 발급 날짜 */
+	        font-size: 14px;
+	        color: black;
+	        margin-top: 160px;
+	    }
+	
+	    #box > h5 { /* 사는 지역 */
+	        font-size: 16px;
+	        color: black;
+	        margin-top: 10px;
+	    }
+	
+	    /* 프로그래스 */
+	    #box.box_main > h1 {
+	        margin-top: 195px;
+	        margin-left: 25px;
+	    }
+	
+	    .QR_Code > img {
+	        width: 120px;
+	        height: 120px;
+	        margin-top: -95px;
+	        margin-left: 230px;
+	    }
+	
+	    .progressbar_text {
+	        display: inline-block;
+	        color:#065bc6;
+	        font-size: 10px;
+	        margin-top: 43px;
+	        margin-left: 27px;
+	    }
+	
+	    .progressbar_time {
+	        display: inline-block;
+	        color:#065bc6;
+	        font-size: 10px;
+	        margin-top: 43px;
+	        margin-left: 245px;
+	    }
+	
+	    .QR_text {
+	        font-size: 10px;
+	        color: #ccc;
+	        padding: 15px;
+	        margin-left: 110px;
+	    }
+	
+	    progress::-webkit-progress-value {
+	        transition: width 1s;
+	        background: #065bc6;
+	    }
+	
+	    progress {
+	        display: inline-block;
+	        display: block;
+	        top: 40px;
+	        left: 27px;
+	        width: 300px;
+	        height: 5px;
+	        position:relative;
+	    }
+	
+	    .back {
+	        display: inline-block;
+	        display: block;
+	        text-align: center;
+	        width: 30px;
+	        margin-left: 20px;
+	        margin-top: -10px;
+	        box-shadow: 1px 3px 3px -1px grey;
+	        border-radius: 50%;
+	        background-color: #fff;
+	    }
+	
+	    .box_footer {
+	        width: 100%;
+	        text-align: center;
+	        line-height: 80px;
+	        margin-top: 23px;
+	        border-top: 1px solid #065bc6;
+	        border-bottom-right-radius: 15px;
+	        border-bottom-left-radius: 15px;
+	        background-color: #065bc6;
+	    }
+	
+	    .box_footer > p {
+	        color: #fff;
+	        padding: 0 10px;
+	    }
+	}
 
 </style>
 </html>
