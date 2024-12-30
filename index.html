@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta htp-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" href="mobile_icon.ico" />
+    <link rel="shortcut icon" href="mobile_icon.i co" />
+    <link rel="stylesheet" href="http://www.junglesystem.com/theme/junglesystem_2017/css/default.css?ver=161120">
+    <link rel="stylesheet" href="font_SJSejongGothic.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+    <title>주민등록증 모바일 확인서비스</title>
+
+    <script type="text/javascript">
+        // F12 버튼 방지
+        $(document).ready(function(){
+            $(document).bind('keydown',function(e){
+                if (e.keyCode) {
+                    e.preventDefault();
+                    e.returnValue = false;
+                }
+            });
+        });
+        
+        // 우측 클릭 방지
+        document.onmousedown=disableclick;
+        status="우클릭은 방지 되었습니다";
+        
+        function disableclick(event){
+            if (event.button==2) {
+                alert(status);
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="icon.png"> 
+        <h2><p>주민등록증</p><p>모바일</p><p>확인서비스</p></h2>
+        <div class="header_list">
+            <bd>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </bd>
+        </div>
+    </div>
+    <hr color="#ddeaf3">
+    <div id="wrap" class>
+        <div id="box" class="box_main">
+            <img src="img.gif">
+            <br>
+            <br>
+            <h1>배재현</h1>
+            <h2 style="margin-left: 27px;">050814</h2>
+            <h3>울산광역시 북구 박상진 2로 121 101동 1201호</h3>
+            <div class="QR_Code">
+                <img id="QR_img" src="data:image/jpeg;base64,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">
+            </div>
+           
+             
+		<progress value="0" max="30" id="jb"></progress>
+           
+            <p class="progressbar_text">남은시간</p> <p class="progressbar_time"></p>
+
+            <p class="QR_text">QR코드를 리더기에 스캔하세요</p>
+
+            <div class="box_footer">
+                <p class="js-click-modal">상세정보 표시</p>
+            </div>
+        </div>
+
+        <div class="modal" style="display: none;">
+            <div id="box">
+                <!-- 박스 내용 개발 -->
+                <img src="{{ imgurl }}"> 
+
+                <h1>배재현</h1>
+                <h2>050814</h2>
+                <h3>울산광역시 북구 박상진 2로 121 101동 1201호</h3>
+                
+		         
+                    <h4 style="margin-left: 42%">2024.02.01</h4>
+                    <h5 style="margin-left: 32%;">울산광역시 북구청장</h5>
+                
+            </div>
+            <div class="back">
+                <bd><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                </svg></bd>
+            </div>
+        </div>
+
+        <div id="footer">
+            <MARQUEE><p>캡쳐방지 시스템이 작동 중입니다. 캡쳐방지 시스템이 작동 중입니다. 캡쳐방지 시스템이 작동 중입니다.</p></MARQUEE>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script type="text/javascript" language = "javascript">
+    // 모바일 웹 주소창 숨기기
+    window.addEventListener('load', function() {
+    // body의 height를 살짝 늘리는 코드
+    document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+    // scroll를 제어 하는 코드
+    setTimeout(scrollTo, 0, 0, 1);
+    }, false);
+</script>
+<script>
+    $(document).ready(function(){
+        $(".js-click-modal").click(function(){
+            document.querySelector('.box_main').style.display = 'none';
+            document.querySelector('.modal').style.display = 'block';
+        });
+
+        $(".back").click(function(){
+            document.querySelector('.box_main').style.display = 'block';
+            document.querySelector('.modal').style.display = 'none';
+        });
+
+        let count = 30
+        setInterval(() => {
+            document.querySelector('.progressbar_time').innerHTML = `${count}초`
+            document.querySelector('#jb').value = count
+	    if(count <= 0) {
+		const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+		let result = '';
+  		const charactersLength = characters.length;
+  		for (let i = 0; i < 54; i++) {
+      			result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  		}
+		document.querySelector('#QR_img').src = `https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=${result}`
+                count = 30
+            }
+            count -= 1
+        }, 1000)
+    })
+</script>
+<style>
+    html, body {
+        /* Prevent font scaling in landscape */
+    
+        -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+    
+        -moz-text-size-adjust: none; /*Firefox*/
+    
+        -ms-text-size-adjust: none;  /*Ie*/
+    
+        -o-text-size-adjust: none; /*old versions of Opera*/
+    
+        height: 100%;
+        width: 100%;
+        background-color: #e4ebf3;
+        font-family: 'SJ처음고딕R_R';
+    }
+
+
+    
+    .header {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    
+    .header > h2, img {
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .header > h2 > p {
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .header > h2 {
+        margin-top: 10px;
+    }
+    
+    .header > img {
+        width:50px; 
+        height:50px;
+    }
+    
+    .header_list {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 95ch;
+    }
+    
+    #box {
+        width: 355px;
+        height: 450px;
+    
+    
+        box-shadow: 0px 0px 3px -5px grey;
+    
+        margin-top: -60px;
+        margin-left: 450px;
+    
+        background-color: #fff;
+        border: 0px solid;
+        padding: auto;
+        border-radius: 15px;
+    }
+    
+    /* BOX 안에 태그 */
+    
+    #box > img { /* 민증 이미지 */
+        width: 120px;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #box > h1 { /* 이름 */
+        color: rgb(44, 43, 43);
+        display: inline-block;
+    
+        font-size: 25px;
+    
+        margin-top: 220px;
+        margin-left: -100px;
+    }
+    
+    #box > h2 { /* 민증 뒷자리 */
+        color: rgb(44, 43, 43);
+    
+        margin-top: 10px;
+        margin-left: 26px;
+    }
+    
+    #box > h3 { /* 주소 */
+        width: 300px;
+    
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 26px;
+    }
+    
+    #box.box_main > h3 { /* 주소 */
+        width: 200px;
+    
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 26px;
+    }
+    
+    #box > h4 { /* 발급 날짜 */
+        font-size: 14px;
+        color: black;
+    
+        margin-top: 35px;
+        margin-left: 40%;
+    }
+    
+    #box > h5 { /* 사는 지역 */
+        font-size: 16px;
+        color: black;
+        margin-top: 10px;
+        margin-left: 28%;
+    }
+    
+    #box.box_main > h1 {
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    
+    .QR_Code > img {
+        width: 120px;
+        height: 120px;
+        margin-top: -125px;
+        margin-left: 230px;
+    }
+    
+    .progressbar_text {
+        display: inline-block;
+        display: block;
+        color:#065bc6;
+        font-size: 10px;
+        margin-left: 26px;
+        margin-top: 10px;
+    }
+    
+    .progressbar_time {
+        display: inline-block;
+        display: block;
+        color:#065bc6;
+        font-size: 10px;
+        margin-top: -14px;
+        margin-left: 306px;
+    }
+    
+    .QR_text {
+        font-size: 10px;
+        color: #ccc;
+        padding: 5px;
+        margin-left: 100px;
+    }
+    
+        progress::-webkit-progress-value {
+            background: #065bc6;
+            
+        }
+        progress {
+    
+                display: inline-block;
+            display: block;
+                top: 10px;
+                left: 27px;
+                width: 300px;
+                height: 3px;
+            position:relative;
+        }
+    
+    .back {
+        display: inline-block;
+        display: block;
+    
+        text-align: center;
+        width: 30px;
+        margin-left: 100px;
+        margin-top: -10px;
+    
+        box-shadow: 5px 5px 5px -1px grey;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    
+    /* 박스 푸터 */
+    
+    .box_footer {
+        width: 100%;
+        text-align: center;
+        line-height: 80px;
+        margin-top: 1ch;
+        border-top: 1px solid #065bc6;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background-color: #065bc6;
+    }
+    
+    .box_footer > p {
+        color: #fff;
+        padding: 0 10px;
+    }
+    
+    /* 맨 아래 푸터 */
+    
+    #footer {
+        height: 50px;
+        width: 100%;
+        padding: 0 25px;
+        line-height: 50px; 
+        color: #8a8c8f;
+        border-top: 1px solid #dee5e7;
+        background: linear-gradient(400deg, #56b4ce , #8656e6 90%);
+    }
+    
+    #footer {
+        position: fixed;
+        bottom: 0;
+    }
+    
+    #footer > MARQUEE > p {
+        width: 100%;
+        color: rgb(255, 255, 255);
+        opacity: 60%;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    
+    /* 모바일 반응형 */
+    
+    
+    @media (max-width: 600px) {  /* 스크린 넓이가 600 이하 라면 */
+        .header_list {
+            display: inline-block;
+            margin-top: 5px;
+            margin-left: 60px;
+        }
+    
+        #box {
+    
+            width: 355px;
+            height: 550px;
+    
+    
+            box-shadow: 0px 0px 3px -5px grey;
+    
+            margin-top: -60px;
+            margin-left: auto;
+            margin-right: auto;
+    
+            background-color: #fff;
+            border: 0px solid;
+            padding: auto;
+            border-radius: 15px;
+        }
+    
+        /* BOX 안에 태그 */
+    
+        #box > img { /* 민증 이미지 */
+            position: absolute;
+            float: left;
+            display: flex;
+    
+            width: 120px;
+            height: 150px;
+    
+            top: 14ch
+        }
+    
+        #box > h1 { /* 이름 */
+            color: rgb(44, 43, 43);
+    
+            font-size: 25px;
+            margin-top: 200px;
+            margin-left: 26px;
+        }
+    
+        #box > h2 { /* 민증 뒷자리 */
+            color: rgb(44, 43, 43);
+    
+            margin-top: 10px;
+            margin-left: 26px;
+        }
+    
+        #box > h3 { /* 주소 */
+            width: 300px;
+    
+            font-size: 12px;
+            margin-top: 10px;
+            margin-left: 26px;
+        }
+    
+        #box > h4 { /* 발급 날짜 */
+            font-size: 14px;
+            color: black;
+            margin-top: 160px;
+        }
+    
+        #box > h5 { /* 사는 지역 */
+            font-size: 16px;
+            color: black;
+            margin-top: 10px;
+        }
+    
+        /* 프로그래스 */
+    
+        #box.box_main > h1 {
+            margin-top: 195px;
+            margin-left: 25px;
+        }
+    
+        .QR_Code > img {
+            width: 120px;
+            height: 120px;
+            margin-top: -110px;
+            margin-left: 230px;
+        }
+    
+        .progressbar_text {
+            display: inline-block;
+            color:#065bc6;
+            font-size: 10px;
+            margin-top: 43px;
+            margin-left: 27px;
+        }
+    
+        .progressbar_time {
+            display: inline-block;
+            color:#065bc6;
+            font-size: 10px;
+            margin-top: 43px;
+            margin-left: 245px;
+        }
+    
+        .QR_text {
+            font-size: 10px;
+            color: #ccc;
+        padding: 15px;
+            margin-left: 110px;
+        }
+    
+        progress::-webkit-progress-value {
+            transition: width 1s;
+            background: #065bc6;
+            
+        }
+        progress {
+                display: inline-block;
+            display: block;
+                top: 40px;
+                left: 27px;
+                width: 300px;
+                height: 5px;
+            position:relative;
+        }
+    
+        .back {
+            display: inline-block;
+            display: block;
+        
+            text-align: center;
+            width: 30px;
+            margin-left: 20px;
+            margin-top: -10px;
+        
+            box-shadow: 1px 3px 3px -1px grey;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+    
+        
+    
+        .box_footer {
+            width: 100%;
+            text-align: center;
+            line-height: 80px;
+            margin-top: 23px;
+            border-top: 1px solid #065bc6;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            background-color: #065bc6;
+        }
+        
+        .box_footer > p {
+            color: #fff;
+            padding: 0 10px;
+        }
+    }
+</style>
+</html>
