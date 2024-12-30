@@ -162,37 +162,37 @@
     }
 
 
-    
     .header {
         margin-top: 15px;
         margin-left: 10px;
     }
-    
+
     .header > h2, img {
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle; /* 수직 중앙 정렬 */
     }
-    
+
     .header > h2 > p {
         display: inline-block;
-        vertical-align: top;
+        vertical-align: middle; /* 수직 중앙 정렬 */
     }
-    
+
     .header > h2 {
-        margin-top: 10px;
+        margin-top: 0; /* 텍스트가 위로 너무 떨어지지 않게 조정 */
     }
-    
+
     .header > img {
-        width:50px; 
-        height:50px;
+        width: 50px; 
+        height: 50px;
+        vertical-align: middle; /* 이미지 수직 중앙 정렬 */
     }
-    
+
     .header_list {
         display: inline-block;
         margin-top: 10px;
         margin-left: 95ch;
     }
-    
+
     #box {
         width: 355px;
         height: 450px;
@@ -212,14 +212,13 @@
     /* BOX 안에 태그 */
     
     #box > img { /* 민증 이미지 */
-        width: 170px;
         height: 200px;
-        position: relative;
-        overflow: hidden;
-        top: 25%;
+        position: absolute;
+        top: 0;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
     }
+
     
     #box > h1 { /* 이름 */
         color: rgb(44, 43, 43);
