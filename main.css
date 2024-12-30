@@ -1,9 +1,14 @@
 html, body {
     /* Prevent font scaling in landscape */
+
     -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+
     -moz-text-size-adjust: none; /*Firefox*/
+
     -ms-text-size-adjust: none;  /*Ie*/
+
     -o-text-size-adjust: none; /*old versions of Opera*/
+
     height: 100%;
     width: 100%;
     background-color: #e4ebf3;
@@ -11,10 +16,8 @@ html, body {
 }
 
 .header {
-    margin-top: 30px; /* 조금 내림 */
+    margin-top: 15px;
     margin-left: 10px;
-    display: flex;
-    align-items: center;
 }
 
 .header > h2, img {
@@ -29,12 +32,11 @@ html, body {
 
 .header > h2 {
     margin-top: 10px;
-    line-height: 1;
 }
 
 .header > img {
-    width: 50px; 
-    height: 50px;
+    width:50px; 
+    height:50px;
 }
 
 .header_list {
@@ -46,10 +48,13 @@ html, body {
 #box {
     width: 355px;
     height: 450px;
+
+
     box-shadow: 0px 0px 3px -5px grey;
-    margin-top: -20px; /* 살짝 내림 */
-    margin-left: auto;
-    margin-right: auto;
+
+    margin-top: -60px;
+    margin-left: 450px;
+
     background-color: #fff;
     border: 0px solid;
     padding: auto;
@@ -58,7 +63,7 @@ html, body {
 
 /* BOX 안에 태그 */
 
-#box > img {
+#box > img { /* 민증 이미지 */
     width: 120px;
     height: 150px;
     position: relative;
@@ -68,41 +73,48 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
-#box > h1 {
+#box > h1 { /* 이름 */
     color: rgb(44, 43, 43);
+    display: inline-block;
+
     font-size: 25px;
+
     margin-top: 220px;
     margin-left: -100px;
 }
 
-#box > h2 {
+#box > h2 { /* 민증 뒷자리 */
     color: rgb(44, 43, 43);
+
     margin-top: 10px;
     margin-left: 26px;
 }
 
-#box > h3 {
+#box > h3 { /* 주소 */
     width: 300px;
+
     font-size: 12px;
     margin-top: 10px;
     margin-left: 26px;
 }
 
-#box.box_main > h3 {
+#box.box_main > h3 { /* 주소 */
     width: 200px;
+
     font-size: 12px;
     margin-top: 10px;
     margin-left: 26px;
 }
 
-#box > h4 {
+#box > h4 { /* 발급 날짜 */
     font-size: 14px;
     color: black;
+
     margin-top: 35px;
     margin-left: 40%;
 }
 
-#box > h5 {
+#box > h5 { /* 사는 지역 */
     font-size: 16px;
     color: black;
     margin-top: 10px;
@@ -118,11 +130,12 @@ html, body {
     width: 120px;
     height: 120px;
     margin-top: -125px;
-    margin-left: 10px; /* QR 코드의 위치를 조금 오른쪽으로 */
+    margin-left: 230px;
 }
 
 .progressbar_text {
     display: inline-block;
+    display: block;
     color:#065bc6;
     font-size: 10px;
     margin-left: 26px;
@@ -131,6 +144,7 @@ html, body {
 
 .progressbar_time {
     display: inline-block;
+    display: block;
     color:#065bc6;
     font-size: 10px;
     margin-top: -14px;
@@ -138,31 +152,36 @@ html, body {
 }
 
 .QR_text {
-    font-size: 13px;
-    color: #666;
+    font-size: 10px;
+    color: #ccc;
     padding: 5px;
     margin-left: 100px;
 }
 
-progress::-webkit-progress-value {
-    background: #065bc6;
-}
+	progress::-webkit-progress-value {
+		background: #065bc6;
+		
+	}
+	progress {
 
-progress {
-    display: inline-block;
-    width: 300px;
-    height: 3px;
-    position:relative;
-    top: 10px;
-    left: 27px;
-}
+        	display: inline-block;
+		display: block;
+        	top: 10px;
+        	left: 27px;
+        	width: 300px;
+        	height: 3px;
+		position:relative;
+	}
 
 .back {
     display: inline-block;
+    display: block;
+
     text-align: center;
     width: 30px;
     margin-left: 100px;
     margin-top: -10px;
+
     box-shadow: 5px 5px 5px -1px grey;
     border-radius: 50%;
     background-color: #fff;
@@ -173,7 +192,7 @@ progress {
 .box_footer {
     width: 100%;
     text-align: center;
-    line-height: 50px; /* 푸터 크기 줄임 */
+    line-height: 80px;
     margin-top: 1ch;
     border-top: 1px solid #065bc6;
     border-bottom-right-radius: 15px;
@@ -189,13 +208,16 @@ progress {
 /* 맨 아래 푸터 */
 
 #footer {
-    height: 40px; /* 푸터 크기 줄임 */
+    height: 50px;
     width: 100%;
     padding: 0 25px;
-    line-height: 40px; 
+    line-height: 50px; 
     color: #8a8c8f;
     border-top: 1px solid #dee5e7;
     background: linear-gradient(400deg, #56b4ce , #8656e6 90%);
+}
+
+#footer {
     position: fixed;
     bottom: 0;
 }
@@ -208,9 +230,11 @@ progress {
     text-align: center;
 }
 
+
 /* 모바일 반응형 */
 
-@media (max-width: 600px) { 
+
+@media (max-width: 600px) {  /* 스크린 넓이가 600 이하 라면 */
     .header_list {
         display: inline-block;
         margin-top: 5px;
@@ -218,64 +242,83 @@ progress {
     }
 
     #box {
+
         width: 355px;
         height: 550px;
+
+
         box-shadow: 0px 0px 3px -5px grey;
-        margin-top: -20px; /* 살짝 내림 */
+
+        margin-top: -60px;
         margin-left: auto;
         margin-right: auto;
+
         background-color: #fff;
         border: 0px solid;
         padding: auto;
         border-radius: 15px;
     }
 
-    #box > img {
+    /* BOX 안에 태그 */
+
+    #box > img { /* 민증 이미지 */
+        position: absolute;
+        float: left;
+        display: flex;
+
         width: 120px;
         height: 150px;
-        position: absolute;
-        top: 14ch;
-        left: 50%;
-        transform: translateX(-50%);
+
+        top: 14ch
     }
 
-    #box > h1 {
+    #box > h1 { /* 이름 */
         color: rgb(44, 43, 43);
+
         font-size: 25px;
         margin-top: 200px;
         margin-left: 26px;
     }
 
-    #box > h2 {
+    #box > h2 { /* 민증 뒷자리 */
         color: rgb(44, 43, 43);
+
         margin-top: 10px;
         margin-left: 26px;
     }
 
-    #box > h3 {
+    #box > h3 { /* 주소 */
         width: 300px;
+
         font-size: 12px;
         margin-top: 10px;
         margin-left: 26px;
     }
 
-    #box > h4 {
+    #box > h4 { /* 발급 날짜 */
         font-size: 14px;
         color: black;
         margin-top: 160px;
     }
 
-    #box > h5 {
+    #box > h5 { /* 사는 지역 */
         font-size: 16px;
         color: black;
         margin-top: 10px;
+    }
+
+    /* 프로그래스 */
+
+    #box.box_main > h1 {
+        margin-top: 195px;
+        margin-left: 25px;
     }
 
     .QR_Code > img {
         width: 120px;
         height: 120px;
         margin-top: -110px;
-        margin-left: 10px; /* QR 코드 위치 조정 */
+        margin-left: 230px;
     }
 
     .progressbar_text {
@@ -297,46 +340,52 @@ progress {
     .QR_text {
         font-size: 10px;
         color: #ccc;
-        padding: 15px;
+	padding: 15px;
         margin-left: 110px;
     }
 
-    progress::-webkit-progress-value {
-        transition: width 1s;
-        background: #065bc6;
-    }
-
-    progress {
-        display: inline-block;
-        width: 300px;
-        height: 5px;
-        position: relative;
-        top: 40px;
-        left: 27px;
-    }
+	progress::-webkit-progress-value {
+		transition: width 1s;
+		background: #065bc6;
+		
+	}
+	progress {
+        	display: inline-block;
+		display: block;
+        	top: 40px;
+        	left: 27px;
+        	width: 300px;
+        	height: 5px;
+		position:relative;
+	}
 
     .back {
         display: inline-block;
+        display: block;
+    
         text-align: center;
         width: 30px;
         margin-left: 20px;
         margin-top: -10px;
+    
         box-shadow: 1px 3px 3px -1px grey;
         border-radius: 50%;
         background-color: #fff;
     }
 
+    
+
     .box_footer {
         width: 100%;
         text-align: center;
-        line-height: 50px; /* 푸터 크기 줄임 */
+        line-height: 80px;
         margin-top: 23px;
         border-top: 1px solid #065bc6;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         background-color: #065bc6;
     }
-
+    
     .box_footer > p {
         color: #fff;
         padding: 0 10px;
