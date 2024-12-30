@@ -50,7 +50,7 @@
 	    width: 355px;
 	    height: 450px;
 	    box-shadow: 0px 0px 3px -5px grey;
-	    margin-top: -60px;
+	    margin-top: -50px;  /* 메인 박스를 조금 내리기 */
 	    margin-left: 450px;
 	    background-color: #fff;
 	    border: 0px solid;
@@ -118,8 +118,8 @@
 	.QR_Code > img {
 	    width: 120px;
 	    height: 120px;
-	    margin-top: -110px;
-	    margin-left: 230px;
+	    margin-top: -90px;  /* QR 코드 위로 조금 올리기 */
+	    margin-left: 180px;  /* QR 코드를 왼쪽으로 이동 */
 	}
 	
 	.progressbar_text {
