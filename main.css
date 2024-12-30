@@ -66,8 +66,8 @@
     /* BOX 안에 태그 */
     
     #box > img { /* 민증 이미지 */
-        width: 220px;
-        height: 250px;
+        height: 170%;
+        width: 170%;
         position: absolute;
         top: 0;
         left: 50%;
