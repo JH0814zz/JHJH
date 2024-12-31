@@ -71,14 +71,14 @@ html, body {
     color: rgb(44, 43, 43);
     display: inline-block;
     font-size: 25px;
-    margin-top: 280px; /* 증가: 260px -> 280px */
+    margin-top: 300px; /* 증가: 260px -> 280px */
     margin-left: 26px;
     line-height: 1.4;
 }
 
 #box > h2 {
     color: rgb(44, 43, 43);
-    margin-top: 45px; /* 증가: 15px -> 25px */
+    margin-top: 15px; /* 증가: 15px -> 25px */
     margin-left: 26px;
     line-height: 1.4;
 }
@@ -86,7 +86,7 @@ html, body {
 #box > h3 {
     width: 300px;
     font-size: 12px;
-    margin-top: 45px; /* 증가: 15px -> 25px */
+    margin-top: 15px; /* 증가: 15px -> 25px */
     margin-left: 26px;
     line-height: 1.4;
 }
@@ -243,20 +243,20 @@ progress {
     #box > h1 {
         color: rgb(44, 43, 43);
         font-size: 25px;
-        margin-top: 260px; /* 증가: 220px -> 240px */
+        margin-top: 220px; /* 증가: 220px -> 240px */
         margin-left: 26px;
     }
 
     #box > h2 {
         color: rgb(44, 43, 43);
-        margin-top: 45px; /* 증가: 15px -> 25px */
+        margin-top: 25px; /* 증가: 15px -> 25px */
         margin-left: 26px;
     }
 
     #box > h3 {
         width: 300px;
         font-size: 12px;
-        margin-top: 45px; /* 증가: 15px -> 25px */
+        margin-top: 25px; /* 증가: 15px -> 25px */
         margin-left: 26px;
     }
 
