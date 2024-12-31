@@ -146,12 +146,12 @@ html, body {
 }
 
 .QR_text {
-    font-size: 30px; /* 기존 10px에서 2배로 증가 */
+    font-size: 20px !important; /* 강제로 적용 */
     color: #ccc;
     padding: 5px;
     margin-left: 100px;
-    position: relative; /* 위치 조정을 위해 추가 */
-    top: -12px; /* 위로 올리기 (필요에 따라 값 조정 가능) */
+    position: relative;
+    top: -12px;
 }
 
 progress::-webkit-progress-value {
