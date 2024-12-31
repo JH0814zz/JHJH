@@ -43,7 +43,7 @@ html, body {
 .header_list {
     display: inline-block;
     margin-top: 10px;
-    margin-left: 85ch;
+    margin-left: 95ch;
 }
 
 #box {
@@ -63,7 +63,7 @@ html, body {
     position: absolute;
     margin-top: 20px;
     left: 50%;
-    transform: translateX(-50%) scale(1.5); /* 이미지 중앙 정렬 및 130% 크기 조정 */
+    transform: translateX(-50%) scale(1.7); /* 이미지 중앙 정렬 및 130% 크기 조정 */
     transform-origin: top center;
 }
 
