@@ -150,7 +150,7 @@ html, body {
     padding: 5px;
     margin-left: 100px;
     position: relative;
-    top: -17px !important;
+    top: -10px !important;
 }
 
 progress::-webkit-progress-value {
@@ -186,7 +186,7 @@ progress {
     line-height: normal !important;
     margin-top: 0px !important;
     position: relative !important;
-    top: -40px !important;
+    top: -50px !important;
     border-top: 1px solid #065bc6;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
