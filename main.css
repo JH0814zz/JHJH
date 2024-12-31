@@ -63,7 +63,7 @@ html, body {
     position: absolute;
     margin-top: 20px;
     left: 50%;
-    transform: translateX(-50%) scale(1.7); /* 이미지 중앙 정렬 및 130% 크기 조정 */
+    transform: translateX(-50%) scale(2.0) !important; /* 이미지 중앙 정렬 및 130% 크기 조정 */
     transform-origin: top center;
 }
 
@@ -72,7 +72,7 @@ html, body {
     display: inline-block;
     font-size: 25px;
     position: relative; /* 위치 조정 */
-    top: 70px; /* 기존 20px + 50px */
+    top: 75px; /* 기존 20px + 50px */
     margin-left: 26px;
     line-height: 1.4;
 }
@@ -80,7 +80,7 @@ html, body {
 #box > h2 {
     color: rgb(44, 43, 43);
     position: relative; /* 위치 조정 추가 */
-    top: 50px; /* 기존 값에서 50px 내려줌 */
+    top: 55px; /* 기존 값에서 50px 내려줌 */
     margin-left: 26px;
     line-height: 1.4;
 }
@@ -89,7 +89,7 @@ html, body {
     width: 300px;
     font-size: 12px;
     position: relative; /* 위치 조정 추가 */
-    top: 50px; /* 기존 값에서 50px 내려줌 */
+    top: 55px; /* 기존 값에서 50px 내려줌 */
     margin-left: 26px;
     line-height: 1.4;
 }
