@@ -194,6 +194,7 @@ progress {
 }
 
 .box_footer > p {
+    text-align: middle center !important;
     font-weight: bold !important;
     color: #fff;
     padding: 0 0px;
