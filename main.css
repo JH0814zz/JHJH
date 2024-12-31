@@ -71,7 +71,8 @@ html, body {
     color: rgb(44, 43, 43);
     display: inline-block;
     font-size: 25px;
-    padding-top: 20px; /* 원하는 만큼 내리기 */
+    position: relative; /* 추가 */
+    top: 20px; /* 원하는 만큼 내리기 */
     margin-left: 26px;
     line-height: 1.4;
 }
