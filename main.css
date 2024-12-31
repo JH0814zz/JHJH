@@ -71,34 +71,37 @@ html, body {
     color: rgb(44, 43, 43);
     display: inline-block;
     font-size: 25px;
-    margin-top: 240px;
-    margin-left: -100px;
+    margin-top: 260px;
+    margin-left: 26px;
+    line-height: 1.4;
 }
 
 #box > h2 {
     color: rgb(44, 43, 43);
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 26px;
+    line-height: 1.4;
 }
 
 #box > h3 {
     width: 300px;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 26px;
+    line-height: 1.4;
 }
 
 #box.box_main > h3 {
     width: 200px;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 26px;
 }
 
 #box > h4 {
     font-size: 14px;
     color: black;
-    margin-top: 35px;
+    margin-top: 25px;
     margin-left: 40%;
 }
 
@@ -117,7 +120,7 @@ html, body {
 .QR_Code > img {
     width: 120px;
     height: 120px;
-    margin-top: -60px;
+    margin-top: -50px;
     margin-left: 180px;
 }
 
@@ -234,33 +237,33 @@ progress {
         height: 150px;
         margin-top: 10px;
         left: 50%;
-        transform: translateX(-50%) scale(1.3); /* 모바일에서도 130% 크기 유지 */
+        transform: translateX(-50%) scale(1.3);
     }
 
     #box > h1 {
         color: rgb(44, 43, 43);
         font-size: 25px;
-        margin-top: 200px;
+        margin-top: 220px;
         margin-left: 26px;
     }
 
     #box > h2 {
         color: rgb(44, 43, 43);
-        margin-top: 10px;
+        margin-top: 15px;
         margin-left: 26px;
     }
 
     #box > h3 {
         width: 300px;
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 15px;
         margin-left: 26px;
     }
 
     #box > h4 {
         font-size: 14px;
         color: black;
-        margin-top: 160px;
+        margin-top: 140px;
     }
 
     #box > h5 {
@@ -277,7 +280,7 @@ progress {
     .QR_Code > img {
         width: 120px;
         height: 120px;
-        margin-top: -80px;
+        margin-top: -70px;
         margin-left: 230px;
     }
 
